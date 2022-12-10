@@ -14,14 +14,16 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+        <div class="one-post">
             <h3><?php the_title(); ?></h3>
 
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
             <?php edit_post_link(); ?>
+            <div class="seperator"></div>
             <p>Previouse Post: <?php previous_post_link(); ?></p>
             <p>Next Post: <?php next_post_link(); ?></p>
-            <hr />
+        </div>
 
         <?php endwhile; ?>
 
