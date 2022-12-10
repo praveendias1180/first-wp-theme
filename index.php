@@ -19,6 +19,9 @@
             <?php the_content(); ?>
             <?php wp_link_pages(); ?>
             <?php edit_post_link(); ?>
+            <p>Previouse Post: <?php previous_post_link(); ?></p>
+            <p>Next Post: <?php next_post_link(); ?></p>
+            <hr />
 
         <?php endwhile; ?>
 
